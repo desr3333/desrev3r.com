@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --hot --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "docker:build": "docker build -t desrev3rcom .",
+    "docker:run": "docker run -it --rm -p 3000:3000 --name desrev3rcom desrev3rcom",
+    "docker:stop": "docker stop desrev3rcom",
+    "docker:start": "npm run build && npm run docker:build && npm run docker:run",
+    "docker:restart": "npm run build && npm run docker:stop && npm run docker:build && npm run docker:run"
   },
   "repository": {
     "type": "git",
