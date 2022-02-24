@@ -1,0 +1,51 @@
+:root {
+  --black-0: #000000;
+  --black-2: #202022;
+
+  --gray: #949495;
+  --red: #dc3545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  background: var(--black-0);
+  font-family: "Lato" sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+article {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: var(--red);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
