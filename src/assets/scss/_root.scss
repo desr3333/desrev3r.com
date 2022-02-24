@@ -15,12 +15,14 @@
 html,
 body {
   background: var(--black-0);
-  font-family: "Lato" sans-serif;
+  font-family: "Lato";
+  font-weight: 400;
   color: #fff;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 72px;
+  font-weight: 700;
 }
 
 h4 {
@@ -28,7 +30,7 @@ h4 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -37,11 +39,8 @@ article {
 }
 
 a {
-  text-decoration: none;
-
-  &:hover {
-    color: var(--red);
-  }
+  text-decoration: underline;
+  color: #fff;
 }
 
 ul {

@@ -1,6 +1,6 @@
 @import "./_root";
-@import "./fonts";
-@import "./icons";
+@import "./_fonts";
+@import "./_icons";
 
 .root-wrapper {
   position: relative;
@@ -33,6 +33,7 @@
 
   p {
     margin-top: 32px;
+    color: var(--gray);
   }
 }
 
@@ -59,6 +60,7 @@ nav {
       a {
         display: flex;
         justify-content: space-between;
+        text-decoration: none;
         align-items: center;
         color: #fff;
 
@@ -76,10 +78,17 @@ nav {
   max-width: 736px;
   height: auto;
   padding: 80px 0px;
+}
+
+.scroll-section {
+  margin-bottom: 80px;
 
   h2 {
     display: none;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
   }
 }
 
