@@ -5,21 +5,19 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  resolve: {
+    extensions: [".js", ".scss", ".css"],
   },
   module: {
     rules: [
       {
         test: /\.s?css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
-          "postcss-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },

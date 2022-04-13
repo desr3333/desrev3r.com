@@ -1,6 +1,10 @@
 module.exports = {
+  syntax: "postcss-scss",
   plugins: [
-    require("autoprefixer"),
-    //  require("postcss-url"),
+    "postcss-import",
+    "autoprefixer",
+    "postcss-url",
+    "postcss-nested",
+    "cssnano",
   ],
 };
