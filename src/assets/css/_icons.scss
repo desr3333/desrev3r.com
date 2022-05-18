@@ -1,13 +1,104 @@
-.link_icon {
-  width: 20px;
-  height: 20px;
-  background-image: url("./../svg/link.svg");
+.icon {
+  transition: all opacity 0.25s;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  mask: url("./../svg/link-icon.svg") center center no-repeat;
+  mask-size: contain;
+  background: var(--gray);
+  opacity: 0.75;
+
+  &:hover {
+    transition: all opacity 0.25s;
+    opacity: 1;
+  }
 }
 
-.github_icon {
-  background-image: url("./../svg/github.svg");
+.link {
+  mask: url("./../svg/link-icon.svg");
+  mask-size: 107.5%;
+
+  &:hover {
+    background: #fff;
+  }
 }
 
-.telegram_icon {
-  background-image: url("./../svg/telegram.svg");
+.github {
+  mask-image: url("./../svg/github-icon.svg");
+
+  &:hover {
+    background: #fff;
+  }
+}
+
+.telegram {
+  mask-image: url("./../svg/telegram-icon.svg");
+
+  &:hover {
+    background: var(--telegram);
+  }
+}
+
+.linkedin {
+  mask-image: url("./../svg/linkedin-icon.svg");
+  mask-mode: luminance, alpha, match-source;
+
+  &:hover {
+    background: var(--linkedin);
+  }
+}
+
+.upwork {
+  mask-image: url("./../svg/upwork-icon.svg");
+
+  &:hover {
+    background: var(--upwork);
+  }
+}
+
+.nodejs {
+  mask-image: url("./../svg/nodejs-icon.svg");
+}
+.nestjs {
+  mask-image: url("./../svg/nestjs-icon.svg");
+}
+
+.postgres {
+  mask-image: url("./../svg/postgres-icon.svg");
+}
+
+.typescript {
+  mask-image: url("./../svg/typescript-icon.svg");
+}
+
+.python {
+  mask-image: url("./../svg/python-icon.svg");
+}
+
+.ethereum {
+  mask-image: url("./../svg/ethereum-icon.svg");
+}
+
+.binance {
+  mask-image: url("./../svg/binance-icon.svg");
+}
+
+.docker {
+  mask-image: url("./../svg/docker-icon.svg");
+}
+
+.mongodb {
+  mask-image: url("./../svg/mongodb-icon.svg");
+}
+
+.graphql {
+  mask-image: url("./../svg/graphql-icon.svg");
+}
+
+.solidity {
+  mask-image: url("./../svg/solidity-icon.svg");
+}
+
+.nginx {
+  mask-image: url("./../svg/nginx-icon.svg");
 }

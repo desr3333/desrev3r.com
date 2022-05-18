@@ -5,8 +5,8 @@
   "main": "./src/main.js",
   "type": "commonjs",
   "scripts": {
-    "start": "webpack serve --hot --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "start:dev": "webpack serve --hot --config webpack.dev.js",
     "docker:build": "docker build -t desrev3rcom .",
     "docker:run": "docker run -it --rm -p 3000:3000 --name desrev3rcom desrev3rcom",
     "docker:stop": "docker stop desrev3rcom",

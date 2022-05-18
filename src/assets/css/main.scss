@@ -42,7 +42,7 @@ nav {
   align-items: center;
 
   .nav__avatar {
-    margin-right: 15px;
+    margin-right: 36px;
   }
 
   .nav__socials {
@@ -52,8 +52,8 @@ nav {
 
     li {
       display: list-item;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
       color: #fff;
 
       a {
@@ -67,6 +67,11 @@ nav {
           padding: 0px 8px;
         }
       }
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
     }
   }
 }
@@ -155,10 +160,40 @@ nav {
   font-size: 12px;
 }
 
+.technology__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .technology__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+    max-width: 90px;
+    min-width: 90px;
+    height: 90px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background: var(--black-2);
+    border-radius: 10px;
+
+    .icon {
+      width: 50%;
+      height: 50%;
+
+      &:hover {
+        background: var(--gray);
+      }
+    }
+  }
+}
+
 .avatar {
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   overflow: hidden;
   border-radius: 100%;
 
@@ -176,39 +211,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-
-  svg {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.icon {
-  transition: all opacity 0.25s;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  filter: invert(1);
-  opacity: 0.6;
-
-  &:hover {
-    transition: all opacity 0.25s;
-    opacity: 1;
-  }
 }
 
 footer {
   .nav__socials {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px 0px;
-
-    li {
-      margin: 5px 0px;
-    }
+    margin-top: 40px;
+    margin-left: -10px;
   }
 }
 
